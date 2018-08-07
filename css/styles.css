@@ -6,13 +6,13 @@ font-family: 'Nunito', sans-serif; */
 
 body {
   font-family: 'Roboto Condensed', sans-serif;
-  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0;
   font-family: 'Sunflower', sans-serif;
+  color: #000000;
 }
 
 h1 {
@@ -36,19 +36,47 @@ h1 {
   /* display: flex; this doesn't look good*/
 }
 
+.navbar-default .navbar-brand {
+  color: #000000;
+}
+
+.navbar-default {
+  background: rgba(0,0,0,.0);
+  border: none;
+}
+
+.navbar-container {
+  background: rgba(0,0,0,.0);
+}
+
 .navbar-border-destroyer {
   border: 0;
   border-radius: 0;
   padding-bottom: 0;
+  background: rgba(0,0,0,.0);
 }
 
 .navbar-inverse .navbar-brand {
+  color: #000000;
+}
+
+.navbar-default .navbar-brand:hover {
   color: #ffffff;
 }
 
-.navbar-inverse .navbar-nav>li>a {
-  color: #ffffff;
+
+.nav-hover {
+  -webkit-transition: all .5s ease-in;
+  -moz-transition: all .5s ease-in;
+  -o-transition: all .5s ease-in;
+  transition: all ease-in .5s;
 }
+.nav-hover:hover {
+  color: #4b3c37;
+  transition: all ease-in .5s;
+}
+
+
 
 /* HERO */
 .hero-section {
@@ -66,23 +94,20 @@ h1 {
   font-size: 10em;
   color: #000000;
 }
-
+/* ABOUT ME */
 .about-me-section {
-  height: 80vh;
-  background: #5A3F37;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #2C7744, #5A3F37);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #2C7744, #5A3F37); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #575540;
   padding: 60px;
 }
 
 .about-me-title {
   margin-bottom: 60px;
 }
-
+/* PROJECTS */
 .projects-section {
-  height: 80vh;
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: #52614a;
 }
 
 .roast {
@@ -99,14 +124,48 @@ h1 {
   height: 50vh;
 }
 
+.scrollstrap {
+  background-image: url("../img/bootstrap-scroll.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50vh;
+}
+/* CONTACT */
 .contact-section {
-  height: 100vh;
-  /* background-color: blue; */
+  /* height: 50vh; */
+  background-color: #575c46;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
+/* FOOTER */
 .footer-section {
-  height: 60px;
+  display: flex;
+  /* height: 60px; */
   background-color: black;
+  padding-top: 10px;
+}
+
+.footer-hover:hover {
+  color: #4b3c37;
+}
+
+/* MEDIA QUERIES */
+/* Small Screens */
+@media only screen and (min-width : 768px) {
+}
+
+@media only screen and (max-width : 768px) {
+  .project-section {
+    height: 50vh;
+    align-content: row;
+  }
+
+}
+
+/* Medium Screens */
+@media only screen and (min-width : 992px) {
+}
+
+/* Large Screens */
+@media only screen and (min-width : 1200px) {
 }

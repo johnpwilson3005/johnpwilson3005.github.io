@@ -10,49 +10,58 @@
   <link rel="stylesheet" href="css/styles.css">
   <title>John Wilson Portfolio</title>
 </head>
-<body>
+<body class="scrollspy" data-spy="scroll" data-target="#main-nav">
   <!-- NAVBAR -->
-  <nav class="navbar navbar-inverse navbar-border-destroyer">
-  <div class="container-fluid navbar-container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <a class="navbar-brand text-white" href="#"><h1>John Wilson</h1></a>
-    </div><!-- /.navbar-header -->
-    <!-- Collect the nav links, forms, and other content for toggling -->
-      <ul class="nav navbar-nav navbar-right">
-        <li class="text-white"><a href="#">About Me</a></li>
-        <li class="text-white"><a href="#">Completed Works</a></li>
-        <li class="text-white"><a href="#">Contact</a></li>
-      </ul> <!-- /.nav navbar-nav navbar-right -->
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+  <nav id="main-nav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <h1 class="nav-hover text-white">John Wilson</h1>
+                </a>
+            </div> <!-- /.navbar-header -->
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="text-black"  href="#"><h2 class="nav-hover text-white">About Me</h2></a></li>
+                    <li><a href="#"><h2 class="nav-hover text-white">Projects</h2></a></li>
+                    <li><a href="#"><h2 class="nav-hover text-white">Contact Me</h2></a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+    </nav><!-- /.navbar -->
 <!-- HERO -->
-  <section class="hero-section">
+  <section id="hero" class="hero-section">
     <div class="container-fluid">
       <div class="row">
-        <div class="text-center"><h2 class="hero-font">DAS ME</h2></div>
       </div>
     </div>
   </section>
 <!-- about me section-->
-  <section>
-    <div class="containter about-me-section">
+  <section class="about-me-section">
+    <div class="containter">
       <div class="row">
         <div class="col-sm-12 text-center about-me-title text-black"><h2>About Me</h2></div>
         <div class="col-sm-6 col-lg-6 text-black">
-          <h3>Current Work</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam et sed sunt repellat autem ex excepturi iure hic consequatur saepe veniam vero dolorum voluptatibus in laborum eum temporibus, non, voluptates, eveniet illo amet unde quam mollitia qui. Mollitia facere, iste non quam ea atque perspiciatis? Voluptate autem voluptates mollitia atque cupiditate, rem, praesentium voluptatum vel culpa, eligendi dolorum suscipit maxime, officiis! Quod odit minima ipsum tenetur corrupti asperiores nemo ab, nam enim molestiae ipsa autem omnis architecto itaque velit repudiandae, laudantium, reiciendis quas aliquam deserunt voluptatem iste tempora cum. Asperiores harum dolorum cupiditate id adipisci cum, enim temporibus, minima laudantium.</p>
+          <h3>Current Abilities</h3>
+          <p>I primarily work with front-end mark-up languages and frameworks currently. Html/css as the mark ups and bootstrap as the framework I am most comfortable with. All of my projects are hosted locally through github by using git commands and git bash. I am an excellent dancer, drummer, and teammate. I am a people person and love working with people.</p>
         </div>
-        <div class="col-sm-6 col-lg-6 text-black">
+        <div class="col-sm-6 col-lg-6  text-black">
           <h3>Current Learning</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate omnis quaerat, reprehenderit tempora minus nisi, ullam quam illo! Expedita voluptate dolore blanditiis. Quia ipsam illum animi eos cupiditate recusandae accusantium, dolorum temporibus nam. Modi repellendus aliquam maxime aut perspiciatis nostrum blanditiis consequuntur eligendi iste, nobis dolores sed delectus distinctio pariatur incidunt, molestias assumenda facere vitae asperiores commodi quas, officia adipisci placeat reprehenderit architecto? Voluptatibus distinctio tempora rem quaerat eius architecto animi magnam, ab impedit possimus non excepturi, fugiat adipisci accusantium officiis nobis. Necessitatibus deserunt repudiandae consequatur nulla, eos placeat soluta itaque tempore, quisquam odio id et minus quod saepe corporis.</p>
+          <p>I am currently working on my professional portfolio as well as a website for a coding challenge Geekwise is hosting. I am going to be learning javascript over the next couple of weeks. I am also competing in a coding challenge based on pushing myself to learn more about making sites more mobile-friendly.</p>
         </div>
       </div>
     </div>
   </section>
 <!-- Projects Section -->
-  <section class="projects-section">
+  <section id="projects" class="projects-section">
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
@@ -67,18 +76,45 @@
             <div class="chairs"></div>
           </a>
         </div>
+        <div class="col-sm-6">
+          <h2>Satisfying Scroll Bootstrap</h2>
+          <a href="https://github.com/johnpwilson3005/wanderlust-bp" target="_blank">
+            <div class="scrollstrap"></div>
+          </a>
+        </div>
       </div>
     </div>
   </section>
 <!-- contact section -->
-  <section class="contact-section">
+  <section id="contact" class="contact-section">
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-12">
-          <h2 class="text-center">Holla at Me</h2>
+          <h2 class="text-center">Contact Me</h2>
         </div>
         <div class="col-sm-12">
-          <form action="submit"></form>
+          <form>
+            <div class="form-group">
+              <label class="text-black" for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label class="text-black" for="exampleInputPassword1">Contact Number</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contact Number">
+            </div>
+            <!-- <div class="form-group">
+              <label for="exampleInputFile">File input</label>
+              <input type="file" id="exampleInputFile">
+              <p class="help-block">Example block-level help text here.</p>
+            </div> -->
+            <!-- <div class="checkbox">
+            <label>
+              <input type="checkbox"> Check me out
+            </label>
+            </div> -->
+              <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+          </form>
         </div>
       </div>
     </div>
@@ -86,18 +122,25 @@
 <!-- footer section -->
   <footer class="footer-section">
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-4 text-center">fo</div>
-        <div class="col-sm-4 text-center">oo</div>
-        <div class="col-sm-4 text-center">ter</div>
+      <div class="row footer-row">
+        <div class="col-xs-4 text-center">
+          <a href="https://github.com/johnpwilson3005" target="_blank">
+            <i class="fab fa-github-square fa-3x text-white footer-hover"></i>
+          </a>
+        </div>
+        <div class="col-xs-4 text-center">
+          <a href="https://www.facebook.com/john.wilson.3994" target="_blank">
+            <i class="fab fa-facebook-square fa-3x text-white footer-hover"></i>
+          </a>
+        </div>
+        <div class="col-xs-4 text-center">
+          <a href="https://www.linkedin.com/in/john-wilson-46409273/" target="_blank">
+            <i class="fab fa-linkedin fa-3x text-white footer-hover"></i>
+          </a>
+        </div>
       </div>
     </div>
   </footer>
-
-
-
-
-
   <!-- link all the scripts here -->
   <script src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
   <script src="js/bootstrap.min.js" charset="utf-8"></script>
