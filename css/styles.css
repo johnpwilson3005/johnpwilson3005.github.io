@@ -1,0 +1,112 @@
+/* GLOBAL STYLES */
+/* Font Families Cheat Sheet
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Sunflower', sans-serif;
+font-family: 'Nunito', sans-serif; */
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Sunflower', sans-serif;
+}
+
+h1 {
+  margin-top: -10px;
+  /* to position  */
+}
+
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-black {
+  color: #000000;
+}
+
+/* NAVBAR */
+.navbar {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  /* display: flex; this doesn't look good*/
+}
+
+.navbar-border-destroyer {
+  border: 0;
+  border-radius: 0;
+  padding-bottom: 0;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: #ffffff;
+}
+
+/* HERO */
+.hero-section {
+  display: flex;
+  height: 100vh;
+  background-image: url("../img/sittin-down.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+  background-position: center;
+  align-items: center;
+}
+
+.hero-font {
+  font-size: 10em;
+  color: #000000;
+}
+
+.about-me-section {
+  height: 80vh;
+  background: #5A3F37;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #2C7744, #5A3F37);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #2C7744, #5A3F37); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 60px;
+}
+
+.about-me-title {
+  margin-bottom: 60px;
+}
+
+.projects-section {
+  height: 80vh;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.roast {
+  background-image: url("../img/roasted-mustard.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50vh;
+}
+
+.chairs {
+  background-image:url("../img/chefs-table.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50vh;
+}
+
+.contact-section {
+  height: 100vh;
+  /* background-color: blue; */
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-section {
+  height: 60px;
+  background-color: black;
+}
