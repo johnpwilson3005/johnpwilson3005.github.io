@@ -30,9 +30,9 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a class="text-black"  href="#"><h2 class="nav-hover text-white">About Me</h2></a></li>
-                    <li><a href="#"><h2 class="nav-hover text-white">Projects</h2></a></li>
-                    <li><a href="#"><h2 class="nav-hover text-white">Contact Me</h2></a></li>
+                    <li><a class="text-black"  href="#about-me"><h2 class="nav-hover text-white">About Me</h2></a></li>
+                    <li><a href="#projects"><h2 class="nav-hover text-white">Projects</h2></a></li>
+                    <li><a href="#contact"><h2 class="nav-hover text-white">Contact Me</h2></a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container -->
@@ -45,13 +45,13 @@
     </div>
   </section>
 <!-- about me section-->
-  <section class="about-me-section">
+  <section id="about-me" class="about-me-section">
     <div class="containter">
       <div class="row">
         <div class="col-sm-12 text-center about-me-title text-black"><h2>About Me</h2></div>
         <div class="col-sm-6 col-lg-6 text-black">
           <h3>Current Abilities</h3>
-          <p>I primarily work with front-end mark-up languages and frameworks currently. Html/css as the mark ups and bootstrap as the framework I am most comfortable with. All of my projects are hosted locally through github by using git commands and git bash. I am an excellent dancer, drummer, and teammate. I am a people person and love working with people.</p>
+          <p>I primarily work with front-end mark-up languages and frameworks currently. Html/css as the mark ups and bootstrap as the framework I am most comfortable with. All of my projects are hosted locally through github using git commands and git bash. I am an excellent dancer, drummer, and teammate. I am a people person and love working with people.</p>
         </div>
         <div class="col-sm-6 col-lg-6  text-black">
           <h3>Current Learning</h3>
@@ -120,27 +120,27 @@
     </div>
   </section>
 <!-- footer section -->
-  <footer class="footer-section">
+  <footer id="footer-id"class="footer-section">
     <div class="container-fluid">
       <div class="row footer-row">
         <div class="col-xs-4 text-center">
           <a href="https://github.com/johnpwilson3005" target="_blank">
             <i class="fab fa-github-square fa-3x text-white footer-hover"></i>
-          </a>
-        </div>
+          </a><!-- <a> holind github icon iframe -->
+        </div><!-- /.col-xs-4 text-center grandparent of github icon -->
         <div class="col-xs-4 text-center">
           <a href="https://www.facebook.com/john.wilson.3994" target="_blank">
             <i class="fab fa-facebook-square fa-3x text-white footer-hover"></i>
-          </a>
-        </div>
+          </a><!-- <a> holinf facebook icon iframe -->
+        </div><!-- col-xs-4 text-center grandparent of facebook icon -->
         <div class="col-xs-4 text-center">
           <a href="https://www.linkedin.com/in/john-wilson-46409273/" target="_blank">
             <i class="fab fa-linkedin fa-3x text-white footer-hover"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </footer>
+          </a><!-- <a> parent of i frame
+        </div><!-- /.col-xs-4 text-center holding linkedin icon -->
+      </div><!-- /.row footer-row -->
+    </div><!-- /.container-fluid -->
+  </footer><!-- #footer-id -->
   <!-- link all the scripts here -->
   <script src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
   <script src="js/bootstrap.min.js" charset="utf-8"></script>

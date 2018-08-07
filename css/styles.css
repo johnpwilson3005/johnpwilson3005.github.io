@@ -17,9 +17,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   margin-top: -10px;
-  /* to position  */
+  /* to position my name to the top left, worked on all screen sizes */
 }
-
 
 .text-white {
   color: #ffffff;
@@ -36,34 +35,12 @@ h1 {
   /* display: flex; this doesn't look good*/
 }
 
-.navbar-default .navbar-brand {
-  color: #000000;
-}
-
 .navbar-default {
   background: rgba(0,0,0,.0);
+  /* to make the navbar transparent */
   border: none;
+  /* to remove the ugly border */
 }
-
-.navbar-container {
-  background: rgba(0,0,0,.0);
-}
-
-.navbar-border-destroyer {
-  border: 0;
-  border-radius: 0;
-  padding-bottom: 0;
-  background: rgba(0,0,0,.0);
-}
-
-.navbar-inverse .navbar-brand {
-  color: #000000;
-}
-
-.navbar-default .navbar-brand:hover {
-  color: #ffffff;
-}
-
 
 .nav-hover {
   -webkit-transition: all .5s ease-in;
@@ -71,12 +48,23 @@ h1 {
   -o-transition: all .5s ease-in;
   transition: all ease-in .5s;
 }
+/* class to easy target what i want to hover */
+
 .nav-hover:hover {
   color: #4b3c37;
   transition: all ease-in .5s;
 }
+/* the actual hover effect */
 
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border: none;
+}
+/* to get rid o the border on the border for the hamburger collapse*/
 
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  background-color: #3d774e;
+}
+/* used in conjunction with scrollspy to give an effect on specific part of the screen */
 
 /* HERO */
 .hero-section {
@@ -89,26 +77,34 @@ h1 {
   background-position: center;
   align-items: center;
 }
+/* backround image with hero details */
 
 .hero-font {
-  font-size: 10em;
-  color: #000000;
+  /* font-size: 10em; */
+  /* color: #000000; */
 }
+/* keeping in case I want to add text over just a picture of myself */
+
+
 /* ABOUT ME */
 .about-me-section {
   background-color: #575540;
   padding: 60px;
 }
+/* i liked the padding all the way around, didn't look right with just top and bottom */
 
 .about-me-title {
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 }
+/* additional padding to seperate the title from the rest of the content */
+
 /* PROJECTS */
 .projects-section {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #52614a;
 }
+/* padding for styling and background color on theme */
 
 .roast {
   background-image: url("../img/roasted-mustard.png");
@@ -116,6 +112,7 @@ h1 {
   background-repeat: no-repeat;
   height: 50vh;
 }
+/* image of completed project linking to the github repo with specifics of the image styling */
 
 .chairs {
   background-image:url("../img/chefs-table.png");
@@ -123,6 +120,7 @@ h1 {
   background-repeat: no-repeat;
   height: 50vh;
 }
+/* image of completed project linking to the github repo with specifics of the image styling */
 
 .scrollstrap {
   background-image: url("../img/bootstrap-scroll.png");
@@ -130,24 +128,29 @@ h1 {
   background-repeat: no-repeat;
   height: 50vh;
 }
+/* image of completed project linking to the github repo with specifics of the image styling */
+
 /* CONTACT */
 .contact-section {
-  /* height: 50vh; */
+  /* height: 50vh; learned that specifying a height can make content overlap*/
   background-color: #575c46;
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 /* FOOTER */
 .footer-section {
   display: flex;
-  /* height: 60px; */
-  background-color: black;
+  /* height: 60px; learned that speciying a height can make content overlap*/
+  background-color: #000000;
   padding-top: 10px;
 }
+/* footer stylings to center content and style */
 
 .footer-hover:hover {
   color: #4b3c37;
 }
+/* to give similar styling hover to navbar */
 
 /* MEDIA QUERIES */
 /* Small Screens */
@@ -155,11 +158,6 @@ h1 {
 }
 
 @media only screen and (max-width : 768px) {
-  .project-section {
-    height: 50vh;
-    align-content: row;
-  }
-
 }
 
 /* Medium Screens */
