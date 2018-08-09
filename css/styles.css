@@ -158,6 +158,19 @@ h1 {
 }
 
 @media only screen and (max-width : 768px) {
+  .hero-section {
+    display: flex;
+    height: 100vh;
+    background-image: url("../img/sittin-down.jpg");
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-position: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width : 768px) {
 }
 
 /* Medium Screens */
