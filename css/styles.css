@@ -79,10 +79,10 @@ h1 {
 }
 /* backround image with hero details */
 
-.hero-font {
-  /* font-size: 10em; */
-  /* color: #000000; */
-}
+/* .hero-font {
+  font-size: 10em;
+  color: #000000;
+} */
 /* keeping in case I want to add text over just a picture of myself */
 
 
@@ -130,6 +130,14 @@ h1 {
 }
 /* image of completed project linking to the github repo with specifics of the image styling */
 
+.southofshaw {
+  background-image: url("../img/SouthofShawFinished.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50vh;
+}
+/* image of completed south of shaw beer company */
+
 /* CONTACT */
 .contact-section {
   /* height: 50vh; learned that specifying a height can make content overlap*/
@@ -157,7 +165,18 @@ h1 {
 @media only screen and (min-width : 768px) {
 }
 
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 767px) {
+  /* .hero-section {
+    display: flex;
+    height: 100vh;
+    background-image: url("../img/sittin-down.jpg");
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-position: center top;
+    align-items: center;
+  } */
+  /* going to keep this to fix the small screen size */
 }
 
 @media only screen and (max-width : 768px) {
